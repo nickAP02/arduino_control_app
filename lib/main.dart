@@ -75,8 +75,6 @@ void initState() {
               StreamBuilder(
               stream: channel.stream,
               builder: (context,snapshot){
-                print(snapshot.hasData);
-                print(snapshot.data);
                 return Text(
                   snapshot.hasData?'${snapshot.data}':'la lampe est éteinte'
                 );
